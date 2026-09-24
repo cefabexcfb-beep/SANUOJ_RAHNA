@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sanuoj & Rahna | Nikah Ceremony</title>
+
+<!-- ================= GOOGLE FONTS ================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+rel="stylesheet"
+>
+
+<!-- ================= CSS ================= -->
+
+<style>
+.wa-float{
+  position:fixed; right:22px; bottom:96px;
+  width:62px; height:62px; border-radius:50%;
+  background:linear-gradient(145deg,#2fe27a,#128c4a);
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  border:1px solid #f5dc91; z-index:9999; text-decoration:none;
+  box-shadow:0 6px 18px rgba(0,0,0,.35), inset 0 2px 4px rgba(255,255,255,.35);
+  transition:.3s;
+}
+.wa-float:hover{ transform:scale(1.12) translateY(-3px); }
+@media(max-width:700px){
+  .wa-float{ width:55px; height:55px; right:16px; bottom:82px; }
+}
+
+#thanks > .reveal{
+    position:relative;
+    z-index:2;
+    
+}
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root{
+    --gold:#d8b45a;
+    --gold-light:#f5dc91;
+    --gold-dark:#98752d;
+
+    --burgundy:#3b0d1a;
+    --deep:#250710;
+
+    --cream:#f7f0e4;
+    --ink:#321b1c;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Times New Roman", Times, serif;
+    background:var(--cream);
+    color:var(--ink);
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:16px 25px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(59,13,26,.95);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(216,180,90,.35);
+}
+
+nav a{
+    color:var(--cream);
+
+    text-decoration:none;
+
+    margin:0 13px;
+
+    font-size:13px;
+
+    letter-spacing:1.5px;
+
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--gold-light);
+}
+
+
+/* =====================================================
+   COMMON SECTION
+===================================================== */
+
+section{
+    min-height:100vh;
+
+    padding:110px 8% 80px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+.burgundy{
+    background:var(--burgundy);
+    color:var(--cream);
+}
+
+.cream{
+    background:var(--cream);
+    color:var(--ink);
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+h1,
+h2,
+h3{
+    font-weight:400;
+}
+
+h2{
+    font-size:clamp(35px,5vw,60px);
+
+    margin-bottom:25px;
+
+    text-shadow:
+        0 0 5px rgba(216,180,90,.2),
+        0 0 15px rgba(216,180,90,.1);
+}
+
+.small-title{
+    text-transform:uppercase;
+
+    letter-spacing:5px;
+
+    font-size:13px;
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+}
+
+.subtitle{
+    max-width:700px;
+
+    line-height:1.8;
+
+    font-size:17px;
+}
+
+.gold{
+    color:var(--gold);
+}
+
+
+/* =====================================================
+   GOLD LINE
+===================================================== */
+
+.line{
+    width:90px;
+
+    height:1px;
+
+    margin:25px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--gold),
+            transparent
+        );
+
+    box-shadow:
+        0 0 8px rgba(216,180,90,.45);
+}
+
+
+/* =====================================================
+   ORNAMENT
+===================================================== */
+
+.ornament{
+    color:var(--gold-light);
+
+    font-size:24px;
+
+    margin:18px 0;
+
+    text-shadow:
+        0 0 8px rgba(245,220,145,.5),
+        0 0 20px rgba(245,220,145,.25);
+
+    animation:ornamentGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes ornamentGlowsparkle{
+
+    from{
+        transform:scale(1);
+        opacity:.75;
+    }
+
+    to{
+        transform:scale(1.08);
+        opacity:1;
+    }
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn{
+    position:relative;
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:13px 30px;
+
+    border:1px solid var(--gold);
+
+    color:var(--gold);
+
+    text-decoration:none;
+
+    letter-spacing:2px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.25),
+        0 0 12px rgba(216,180,90,.15);
+
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--gold);
+
+    color:var(--burgundy);
+
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.3),
+        0 0 25px rgba(216,180,90,.4);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+#home{
+    min-height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(201,162,74,.12),
+            transparent 45%
+        ),
+        var(--burgundy);
+}
+
+
+/* Decorative corners */
+
+#home::before,
+#home::after{
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    border:1px solid rgba(216,180,90,.3);
+
+    transform:rotate(45deg);
+}
+
+#home::before{
+    top:-110px;
+    left:-110px;
+}
+
+#home::after{
+    bottom:-110px;
+    right:-110px;
+}
+
+
+/* Additional inner circle */
+
+#home .hero-circle{
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(216,180,90,.15);
+
+    box-shadow:
+        0 0 0 25px rgba(216,180,90,.025),
+        0 0 0 50px rgba(216,180,90,.02);
+
+    pointer-events:none;
+}
+
+
+/* Hero content */
+
+.hero-content{
+    position:relative;
+
+    z-index:2;
+}
+
+
+/* Small heading */
+
+.hero-small{
+    color:var(--gold-light);
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+    margin-bottom:25px;
+}
+
+
+/* =====================================================
+   HERO NAMES
+   HANDWRITTEN / WEDDING STYLE
+===================================================== */
+
+.hero-title{
+
+    font-family:"Great Vibes", cursive;
+
+    font-size:clamp(75px,11vw,145px);
+
+    font-weight:400;
+
+    line-height:.85;
+
+    letter-spacing:1px;
+
+    color:#fffaf0;
+
+    margin:30px 0;
+
+    white-space:nowrap;
+
+    text-shadow:
+        0 2px 0 #8f6d29,
+        0 4px 0 #70531f,
+        0 8px 18px rgba(0,0,0,.45),
+        0 0 20px rgba(216,180,90,.35),
+        0 0 45px rgba(216,180,90,.15);
+
+    animation:nameGlow 3s ease-in-out infinite alternate;
+}
+
+.hero-title span{
+
+    font-family:"Great Vibes", cursive;
+
+    color:var(--gold-light);
+
+    font-size:.75em;
+
+    margin:0 8px;
+
+    text-shadow:
+        0 2px 0 #806020,
+        0 5px 12px rgba(0,0,0,.45),
+        0 0 25px rgba(245,220,145,.6);
+}
+
+@keyframes nameGlow{
+
+    from{
+
+        text-shadow:
+            0 2px 0 #8f6d29,
+            0 4px 0 #70531f,
+            0 8px 18px rgba(0,0,0,.45),
+            0 0 18px rgba(216,180,90,.25);
+    }
+
+    to{
+
+        text-shadow:
+            0 2px 0 #a98535,
+            0 4px 0 #70531f,
+            0 8px 20px rgba(0,0,0,.5),
+            0 0 35px rgba(216,180,90,.55),
+            0 0 60px rgba(216,180,90,.2);
+    }
+}
+
+
+.hero-date{
+
+    font-size:17px;
+
+    letter-spacing:4px;
+
+    color:var(--cream);
+}
+
+
+/* =====================================================
+   VERSE
+===================================================== */
+
+.verse-box{
+
+    width:100%;
+
+    max-width:850px;
+
+    padding:45px;
+
+    border:1px solid rgba(201,162,74,.5);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.35),
+            rgba(255,255,255,.08)
+        );
+
+    box-shadow:
+        0 15px 35px rgba(59,13,26,.1),
+        inset 0 1px 0 rgba(255,255,255,.5);
+}
+
+.arabic{
+
+    direction:rtl;
+
+    font-size:30px;
+
+    line-height:2;
+
+    margin-bottom:25px;
+}
+
+.translation{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    font-style:italic;
+}
+
+.reference{
+
+    color:var(--gold);
+
+    margin-top:25px;
+
+    letter-spacing:2px;
+
+    font-size:13px;
+}
+
+
+/* =====================================================
+   COUPLE
+===================================================== */
+
+.couple-container{
+
+    width:100%;
+
+    max-width:1000px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+}
+
+.person-card{
+
+    padding:45px 30px;
+
+    border:1px solid #d8c59b;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.4),
+            rgba(255,255,255,.1)
+        );
+
+    box-shadow:
+        0 10px 25px rgba(59,13,26,.12),
+        inset 0 1px 0 rgba(255,255,255,.5);
+
+    transition:.4s;
+}
+
+.person-card:hover{
+
+    transform:
+        translateY(-10px)
+        perspective(800px)
+        rotateX(2deg)
+        rotateY(-2deg);
+
+    box-shadow:
+        0 20px 40px rgba(59,13,26,.18);
+}
+
+.person-card .role{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:12px;
+}
+
+.person-card h3{
+
+    font-size:38px;
+
+    margin:18px 0;
+}
+
+.person-card p{
+
+    line-height:1.8;
+
+    font-size:16px;
+}
+
+
+/* =====================================================
+   FAMILY
+===================================================== */
+
+.family-grid{
+
+    width:100%;
+
+    max-width:1050px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+}
+
+.family-card{
+
+    background:#fffaf1;
+
+    border:1px solid #ddcda9;
+
+    padding:40px;
+
+    text-align:left;
+
+    box-shadow:
+        0 10px 25px rgba(59,13,26,.1);
+
+    transition:.4s;
+}
+
+.family-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(59,13,26,.16);
+}
+
+.family-card h3{
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+    color:#641f2b;
+}
+
+.family-card p{
+
+    padding:10px 0;
+
+    border-bottom:1px solid #eadfc8;
+
+    line-height:1.6;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.date-box{
+
+    border:1px solid rgba(201,162,74,.6);
+
+    padding:55px 70px;
+
+    max-width:700px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.06),
+            rgba(255,255,255,.02)
+        );
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.15);
+}
+
+.day{
+
+    font-size:24px;
+
+    letter-spacing:4px;
+}
+
+.date-number{
+
+    font-size:90px;
+
+    color:var(--gold);
+
+    line-height:1;
+
+    margin:15px 0;
+
+    text-shadow:
+        0 2px 0 #856523,
+        0 5px 12px rgba(0,0,0,.35),
+        0 0 25px rgba(216,180,90,.35);
+}
+
+.month{
+
+    font-size:25px;
+
+    letter-spacing:5px;
+}
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+.countdown{
+
+    display:flex;
+
+    gap:15px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+}
+
+.time{
+
+    min-width:100px;
+
+    padding:20px 12px;
+
+    border:1px solid rgba(201,162,74,.5);
+}
+
+.time strong{
+
+    display:block;
+
+    font-size:35px;
+
+    color:var(--gold);
+}
+
+.time span{
+
+    font-size:11px;
+
+    letter-spacing:2px;
+}
+
+
+/* =====================================================
+   VENUE
+===================================================== */
+
+.venue-card{
+
+    max-width:700px;
+
+    border:1px solid #d8c59b;
+
+    padding:50px;
+
+    background:#fffaf1;
+
+    box-shadow:
+        0 10px 30px rgba(59,13,26,.12);
+
+    transition:.4s;
+}
+
+.venue-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(59,13,26,.18);
+}
+
+.venue-card h3{
+
+    font-size:38px;
+
+    color:#641f2b;
+
+    margin-bottom:15px;
+}
+
+.venue-card p{
+
+    font-size:18px;
+
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   DUA
+===================================================== */
+
+.dua{
+
+    max-width:800px;
+}
+
+.dua-arabic{
+
+    direction:rtl;
+
+    font-size:34px;
+
+    line-height:2;
+
+    margin:30px 0;
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.chapter-text{
+
+    max-width:750px;
+
+    font-size:19px;
+
+    line-height:2;
+}
+
+
+/* =====================================================
+   RSVP
+===================================================== */
+
+form{
+
+    width:100%;
+
+    max-width:600px;
+
+    text-align:left;
+}
+
+.form-group{
+
+    margin-bottom:20px;
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#641f2b;
+
+    letter-spacing:1px;
+}
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #bfae88;
+
+    background:#fffaf1;
+
+    color:var(--ink);
+
+    font-family:inherit;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+textarea{
+
+    min-height:130px;
+
+    resize:vertical;
+}
+
+input:focus,
+textarea:focus{
+
+    border-color:var(--gold);
+}
+
+.checkbox{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:flex-start;
+
+    font-size:14px;
+
+    margin:15px 0;
+}
+
+.checkbox input{
+
+    width:auto;
+
+    margin-top:3px;
+}
+
+.submit{
+
+    width:100%;
+
+    background:var(--burgundy);
+
+    color:var(--gold);
+
+    border:1px solid var(--gold);
+
+    padding:15px;
+
+    font-family:inherit;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.submit:hover{
+
+    background:var(--gold);
+
+    color:var(--burgundy);
+}
+
+#successMessage{
+
+    display:none;
+
+    margin-top:25px;
+
+    color:#641f2b;
+
+    font-size:18px;
+}
+
+
+/* =====================================================
+   FINAL PAGE
+===================================================== */
+
+.final-title{
+
+    font-size:clamp(50px,8vw,100px);
+
+    color:var(--gold);
+
+    text-shadow:
+        0 2px 0 #806020,
+        0 5px 15px rgba(0,0,0,.4),
+        0 0 20px rgba(216,180,90,.35),
+        0 0 50px rgba(216,180,90,.15);
+
+    animation:finalGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes finalGlow{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.015);
+    }
+}
+
+
+/* =====================================================
+   CEFABEX INVITATIONS
+   LAST PAGE ONLY
+===================================================== */
+
+.cefabex-brand{
+
+    margin-top:70px;
+
+    padding-top:22px;
+
+    border-top:1px solid rgba(216,180,90,.35);
+
+    color:var(--gold);
+
+    font-family:
+        "Times New Roman",
+        Times,
+        serif;
+
+    font-size:12px;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    opacity:.9;
+
+    text-shadow:
+        0 0 8px rgba(216,180,90,.25);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    background:var(--deep);
+
+    color:var(--cream);
+
+    padding:35px;
+
+    text-align:center;
+
+    line-height:2;
+}
+
+footer span{
+
+    color:var(--gold);
+}
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:1s ease;
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+
+/* =====================================================
+   CALL FLOAT
+===================================================== */
+
+.Call-float{
+
+    position:fixed;
+
+    right:22px;
+
+    bottom:22px;
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:27px;
+
+    z-index:9999;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.35),
+        0 0 20px rgba(37,211,102,.4);
+
+    animation:whatsappPulse 2.2s infinite;
+
+    transition:.3s;
+}
+
+.Call-float:hover{
+
+    transform:
+        scale(1.12)
+        translateY(-3px);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:700px){
+
+    nav{
+
+        overflow-x:auto;
+
+        justify-content:flex-start;
+
+        white-space:nowrap;
+
+        padding:14px;
+    }
+
+    nav a{
+
+        margin:0 9px;
+
+        font-size:11px;
+    }
+
+    section{
+
+        padding:100px 6% 70px;
+    }
+
+    .hero-title{
+
+        font-size:65px;
+
+        white-space:normal;
+    }
+
+    .hero-title span{
+
+        font-size:.65em;
+
+        margin:0 3px;
+    }
+
+    .hero-small{
+
+        letter-spacing:4px;
+
+        font-size:11px;
+    }
+
+    .couple-container,
+    .family-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .person-card h3{
+
+        font-size:32px;
+    }
+
+    .verse-box{
+
+        padding:25px 18px;
+    }
+
+    .arabic{
+
+        font-size:24px;
+    }
+
+    .date-box{
+
+        padding:40px 20px;
+    }
+
+    .date-number{
+
+        font-size:70px;
+    }
+
+    .venue-card{
+
+        padding:35px 20px;
+    }
+
+    .venue-card h3{
+
+        font-size:30px;
+    }
+
+    .dua-arabic{
+
+        font-size:25px;
+    }
+
+    .time{
+
+        min-width:75px;
+    }
+
+    .time strong{
+
+        font-size:27px;
+    }
+
+    .whatsapp-float{
+
+        width:55px;
+
+        height:55px;
+
+        right:16px;
+
+        bottom:16px;
+
+        font-size:24px;
+    }
+}
+/* =====================================================
+   CLASSY MOSQUE BACKGROUND
+   Subtle transparent silhouette
+===================================================== */
+
+.burgundy{
+    position:relative;
+    overflow:hidden;
+}
+
+/* Mosque silhouette */
+.burgundy::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+
+    width:100%;
+    height:45%;
+
+    opacity:.10;
+    pointer-events:none;
+    z-index:0;
+
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mosque_silhouette.svg/1280px-Mosque_silhouette.svg.png");
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    background-size:contain;
+
+    filter:
+        brightness(1.8)
+        sepia(1)
+        saturate(.7);
+
+    mask-image:linear-gradient(
+        to top,
+        rgba(0,0,0,1),
+        rgba(0,0,0,.65),
+        transparent
+    );
+
+    -webkit-mask-image:linear-gradient(
+        to top,
+        rgba(0,0,0,1),
+        rgba(0,0,0,.65),
+        transparent
+    );
+}
+
+/* Keep all content above the mosque */
+.burgundy > *{
+    position:relative;
+    z-index:2;
+}
+
+/* Extra elegant glow behind mosque */
+.burgundy::before{
+    z-index:0;
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+    <a href="#home">HOME</a>
+
+    <a href="#verse">VERSE</a>
+
+    <a href="#couple">COUPLE</a>
+
+    <a href="#family">FAMILY</a>
+
+    <a href="#date">DATE</a>
+
+    <a href="#venue">VENUE</a>
+
+    <a href="#dua">DUA</a>
+
+    <a href="#rsvp">RSVP</a>
+
+</nav>
+
+
+<!-- =====================================================
+     PAGE 1 — HERO
+===================================================== -->
+
+<section id="home" class="burgundy">
+
+    <div class="hero-circle"></div>
+
+    <div class="hero-content reveal">
+
+        <div class="hero-small">
+            Together with their families
+        </div>
+
+
+        <div class="hero-title">
+
+            Sanuoj
+
+            <span>&amp;</span>
+
+            Rahna
+
+        </div>
+
+
+        <div class="line"></div>
+
+
+        <div class="hero-date">
+
+            Thursday · 15 July 2027
+
+        </div>
+
+
+        <div class="ornament">
+            ✦
+        </div>
+
+
+        <p class="subtitle">
+
+            With the blessings of Allah and the love of our families,
+            we invite you to share in the beginning of our new journey.
+
+        </p>
+
+
+        <a href="#venue" class="btn">
+
+            VIEW DETAILS
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 2 — QURAN VERSE
+===================================================== -->
+
+<section id="verse" class="cream">
+
+    <div class="reveal">
+
+        <div class="small-title">
+            In the Name of Allah
+        </div>
+
+
+        <h2>
+            A Beautiful Beginning
+        </h2>
+
+
+        <div class="line"></div>
+
+
+        <div class="verse-box">
+
+            <div class="arabic">
+
+                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ
+                أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ
+                بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+
+            </div>
+
+
+            <div class="translation">
+
+                “And among His signs is that He created for you spouses
+                from among yourselves so that you may find tranquillity
+                in them; and He has placed between you affection and mercy.”
+
+            </div>
+
+
+            <div class="reference">
+
+                — SURAH AR-RUM 30:21
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 3 — COUPLE
+===================================================== -->
+
+<section id="couple" class="cream">
+
+    <div class="reveal">
+
+        <div class="small-title">
+            Two Hearts
+        </div>
+
+
+        <h2>
+            One Journey
+        </h2>
+
+
+        <div class="line"></div>
+
+
+        <div class="couple-container">
+
+
+            <!-- GROOM -->
+
+            <div class="person-card">
+
+                <div class="role">
+                    The Groom
+                </div>
+
+
+                <h3>
+                    Sanuoj VFS
+                </h3>
+
+
+                <p>
+
+                    Finance &amp; HR
+                    <br>
+
+                    EAE, Dubai
+
+                </p>
+
+            </div>
+
+
+
+            <!-- BRIDE -->
+
+            <div class="person-card">
+
+                <div class="role">
+                    The Bride
+                </div>
+
+
+                <h3>
+                    Fathima Rahna R
+                </h3>
+
+
+                <p>
+
+                    B.Com, MBA
+                    <br>
+
+                    Managing Director
+                    <br>
+
+                    CEFABEX Innovations
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 4 — FAMILIES
+===================================================== -->
+
+<section id="family" class="cream">
+
+    <div class="reveal">
+
+        <div class="small-title">
+            With Our Families
+        </div>
+
+
+        <h2>
+            Our Families
+        </h2>
+
+
+        <div class="line"></div>
+
+
+        <div class="family-grid">
+
+
+            <!-- GROOM FAMILY -->
+
+            <div class="family-card">
+
+                <h3>
+                    Groom's Family
+                </h3>
+
+
+                <p>
+
+                    <strong>Father:</strong>
+                    <br>
+
+                    Saifullah vf
+
+                </p>
+
+
+                <p>
+
+                    <strong>Mother:</strong>
+                    <br>
+
+                    Rahmath mubeina
+
+                </p>
+
+
+                <p>
+
+                    <strong>Brother:</strong>
+                    <br>
+
+                    Aafeq vfs
+
+                </p>
+
+            </div>
+
+
+
+            <!-- BRIDE FAMILY -->
+
+            <div class="family-card">
+
+                <h3>
+                    Bride's Family
+                </h3>
+
+
+                <p>
+
+                    <strong>Father:</strong>
+                    <br>
+
+                    Rafeek Ahamed F
+
+                </p>
+
+
+                <p>
+
+                    <strong>Mother:</strong>
+                    <br>
+
+                    Shamila F
+
+                </p>
+
+
+                <p>
+
+                    <strong>Brother:</strong>
+                    <br>
+
+                    Roshan Akthar R
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 5 — DATE
+===================================================== -->
+
+<section id="date" class="burgundy">
+
+    <div class="reveal">
+
+        <div class="small-title">
+            Save The Date
+        </div>
+
+
+        <div class="date-box">
+
+            <div class="day">
+                THURSDAY
+            </div>
+
+
+            <div class="date-number">
+                15
+            </div>
+
+
+            <div class="month">
+                JULY · 2027
+            </div>
+
+
+            <div class="line"></div>
+
+
+            <p>
+                Nikah Ceremony
+            </p>
+
+
+            <p style="margin-top:10px;">
+
+                11:00 AM – 1:00 PM
+
+            </p>
+
+        </div>
+
+
+
+        <!-- COUNTDOWN -->
+
+        <div class="countdown">
+
+
+            <div class="time">
+
+                <strong id="days">
+                    00
+                </strong>
+
+                <span>
+                    DAYS
+                </span>
+
+            </div>
+
+
+            <div class="time">
+
+                <strong id="hours">
+                    00
+                </strong>
+
+                <span>
+                    HOURS
+                </span>
+
+            </div>
+
+
+            <div class="time">
+
+                <strong id="minutes">
+                    00
+                </strong>
+
+                <span>
+                    MINUTES
+                </span>
+
+            </div>
+
+
+            <div class="time">
+
+                <strong id="seconds">
+                    00
+                </strong>
+
+                <span>
+                    SECONDS
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 6 — VENUE
+===================================================== -->
+
+<section id="venue" class="cream">
+
+    <div class="reveal">
+
+        <div class="small-title">
+            The Venue
+        </div>
+
+
+        <h2>
+            Where We Meet
+        </h2>
+
+
+        <div class="line"></div>
+
+
+        <div class="venue-card">
+
+            <h3>
+                Bawakasim Oliyyullah Hall
+            </h3>
+
+
+            <p>
+                Edalakudy, Kottar
+            </p>
+
+
+            <p style="margin-top:15px;">
+
+                Thursday, 15 July 2027
+
+            </p>
+
+
+            <p>
+
+                11:00 AM – 1:00 PM
+
+            </p>
+
+
+            <a
+                class="btn"
+                href="https://www.google.com/maps/search/?api=1&query=Bawakasim+Oliyyullah+Hall+Edalakudy+Kottar"
+                target="_blank"
+                rel="noopener"
+            >
+
+                VIEW LOCATION
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 7 — DUA
+===================================================== -->
+
+<section id="dua" class="burgundy">
+
+    <div class="reveal dua">
+
+        <div class="small-title">
+            A Prayer For Us
+        </div>
+
+
+        <h2>
+            May Allah Bless This Journey
+        </h2>
+
+
+        <div class="line"></div>
+
+
+        <div class="dua-arabic">
+
+            رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا
+            وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ
+
+        </div>
+
+
+        <p class="translation">
+
+            “Our Lord, grant us from our spouses and offspring
+            comfort to our eyes and make us an example for the righteous.”
+
+        </p>
+
+
+        <div class="reference">
+
+            SURAH AL-FURQAN 25:74
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 8 — STORY
+===================================================== -->
+
+<section id="chapter" class="cream">
+
+    <div class="reveal">
+
+        <div class="small-title">
+            Our Story
+        </div>
+
+
+        <h2>
+            A New Chapter
+        </h2>
+
+
+        <div class="line"></div>
+
+
+        <p class="chapter-text">
+
+            Two lives, two families, countless memories —
+            and now one beautiful beginning.
+
+            <br><br>
+
+            We are grateful to Allah for bringing our paths together
+            and to our families for their endless love and blessings.
+
+            <br><br>
+
+            As we begin this new chapter,
+            your presence and prayers mean more to us than words can say.
+
+        </p>
+
+
+        <div class="ornament">
+            ✦
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 9 — RSVP
+===================================================== -->
+
+<section id="rsvp" class="cream">
+
+    <div class="reveal">
+
+        <div class="small-title">
+            With Love
+        </div>
+
+
+        <h2>
+            Send Your Wishes
+        </h2>
+
+
+        <div class="line"></div>
+
+
+        <form id="wishForm">
+
+
+            <div class="form-group">
+
+                <label for="name">
+                    YOUR NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    PHONE / WHATSAPP
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your number"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    YOUR MESSAGE
+                </label>
+
+                <textarea
+                    id="message"
+                    placeholder="Write your wishes..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="checkbox">
+
+                <input
+                    type="checkbox"
+                    id="consent"
+                    required
+                >
+
+                <span>
+
+                    I agree to share my details for this wedding
+                    invitation and RSVP communication.
+
+                </span>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="submit"
+            >
+
+                SEND WISHES
+
+            </button>
+
+
+        </form>
+
+
+        <p id="successMessage">
+
+            Thank you for your beautiful wishes.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 10 — FINAL PAGE
+     CEFABEX INVITATIONS IS HERE
+===================================================== -->
+
+<section id="thanks" class="burgundy">
+<div class="mosque-bg">
+    <svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Main mosque -->
+        <rect x="430" y="210" width="340" height="150"/>
+
+        <!-- Main dome -->
+        <path d="M480 210
+                 Q600 60 720 210
+                 Z"/>
+
+        <!-- Dome finial -->
+        <rect x="596" y="42" width="8" height="35"/>
+        <circle cx="600" cy="35" r="9"/>
+
+        <!-- Left minaret -->
+        <rect x="350" y="130" width="45" height="230"/>
+        <path d="M340 130 L405 130 L372 80 Z"/>
+        <rect x="360" y="105" width="25" height="25"/>
+
+        <!-- Right minaret -->
+        <rect x="805" y="130" width="45" height="230"/>
+        <path d="M795 130 L860 130 L827 80 Z"/>
+        <rect x="815" y="105" width="25" height="25"/>
+
+        <!-- Side domes -->
+        <path d="M390 220 Q450 150 510 220 Z"/>
+        <path d="M690 220 Q750 150 810 220 Z"/>
+
+        <!-- Main entrance -->
+        <path d="M555 360
+                 L555 285
+                 Q600 230 645 285
+                 L645 360 Z"/>
+
+        <!-- Windows -->
+        <path d="M490 360 L490 300 Q510 270 530 300 L530 360 Z"/>
+        <path d="M670 360 L670 300 Q690 270 710 300 L710 360 Z"/>
+
+        <!-- Small arches -->
+        <path d="M450 360 L450 315 Q465 290 480 315 L480 360 Z"/>
+        <path d="M720 360 L720 315 Q735 290 750 315 L750 360 Z"/>
+
+        <!-- Ground -->
+        <rect x="250" y="360" width="700" height="8"/>
+
+    </svg>
+</div>
+
+    <div class="reveal">
+
+        <div class="small-title">
+            Until We Meet
+        </div>
+
+
+        <div class="final-title">
+
+            JazakAllahu Khairan
+
+        </div>
+
+
+        <div class="line"></div>
+
+
+        <p class="subtitle">
+
+            Your presence, prayers and blessings
+            will make our Nikah even more special.
+
+        </p>
+
+
+        <div class="ornament">
+            ✦
+        </div>
+
+
+        <a
+            href="https://wa.me/919600371766?text=Assalamu%20Alaikum%2C%20I%20would%20like%20to%20send%20my%20wishes%20to%20Sanuoj%20%26%20Rahna."
+            target="_blank"
+            rel="noopener"
+            class="btn"
+        >
+
+            SEND WISHES ON WHATSAPP
+
+        </a>
+
+
+        <!-- =========================================
+             CEFABEX INVITATIONS
+             LAST PAGE ONLY
+        ========================================== -->
+
+        <div class="cefabex-brand">
+
+            CEFABEX INVITATIONS
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+
+        With love,
+        <span>Sanuoj &amp; Rahna</span>
+
+    </p>
+
+
+    <p>
+
+        15 · 07 · 2027
+
+    </p>
+
+</footer>
+
+
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+const weddingDate =
+    new Date("2027-07-15T11:00:00+05:30").getTime();
+
+
+function updateCountdown(){
+
+    const now =
+        new Date().getTime();
+
+
+    const distance =
+        weddingDate - now;
+
+
+    if(distance <= 0){
+
+        document.getElementById("days").innerText = "00";
+
+        document.getElementById("hours").innerText = "00";
+
+        document.getElementById("minutes").innerText = "00";
+
+        document.getElementById("seconds").innerText = "00";
+
+        return;
+    }
+
+
+    const days =
+        Math.floor(
+            distance /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60 * 24))
+            /
+            (1000 * 60 * 60)
+        );
+
+
+    const minutes =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60))
+            /
+            (1000 * 60)
+        );
+
+
+    const seconds =
+        Math.floor(
+            (distance %
+            (1000 * 60))
+            /
+            1000
+        );
+
+
+    document.getElementById("days").innerText =
+        String(days).padStart(2,"0");
+
+
+    document.getElementById("hours").innerText =
+        String(hours).padStart(2,"0");
+
+
+    document.getElementById("minutes").innerText =
+        String(minutes).padStart(2,"0");
+
+
+    document.getElementById("seconds").innerText =
+        String(seconds).padStart(2,"0");
+
+}
+
+
+updateCountdown();
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+const observer =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(
+                entry => {
+
+                    if(entry.isIntersecting){
+
+                        entry.target.classList.add("show");
+
+                    }
+
+                }
+            );
+
+        },
+
+        {
+            threshold:.15
+        }
+
+    );
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(
+        element => {
+
+            observer.observe(element);
+
+        }
+    );
+
+
+
+/* =====================================================
+   RSVP FORM
+===================================================== */
+
+const wishForm =
+    document.getElementById("wishForm");
+
+
+wishForm.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+
+        const name =
+            document.getElementById("name").value.trim();
+
+
+        const phone =
+            document.getElementById("phone").value.trim();
+
+
+        const message =
+            document.getElementById("message").value.trim();
+
+
+        const consent =
+            document.getElementById("consent").checked;
+
+
+        if(
+            !name ||
+            !phone ||
+            !message ||
+            !consent
+        ){
+
+            alert(
+                "Please complete all fields."
+            );
+
+            return;
+
+        }
+
+
+        wishForm.style.display =
+            "none";
+
+
+        document.getElementById(
+            "successMessage"
+        ).style.display =
+            "block";
+
+
+        console.log({
+
+            name:name,
+
+            phone:phone,
+
+            message:message,
+
+            consent:consent
+
+        });
+
+    }
+);
+
+
+
+/* =====================================================
+   WHATSAPP CLICK TRACKING
+===================================================== */
+
+document
+    .querySelectorAll(
+        'a[href*="whatsapp_icon"]'
+    )
+    .forEach(
+        link => {
+
+            link.addEventListener(
+                "click",
+                function(){
+
+                    console.log(
+                        "WhatsApp clicked:",
+                        new Date().toISOString()
+                    );
+
+                }
+            );
+
+        }
+    );
+
+</script>
+<a href="https://wa.me/91XXXXXXXXXX?text=Assalamu%20alaikum%2C%20congratulations%20on%20the%20Nikah!"
+   class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+</body>
+
+
+</section>\
+
+</html>
